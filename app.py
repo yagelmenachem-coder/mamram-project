@@ -91,4 +91,5 @@ with tab1:
 with tab2:
     st.header("זיהוי זיוף קול (Audio Forensics)")
     st.write("העלה הקלטה כדי לבדוק אם מדובר בקול אנושי או ב-Deepfake שנוצר ע\"י AI.")
-    audio_file = st.file_uploader("בחר קובץ
+
+    audio_file = st.file_uploader("בחר קובץ")
