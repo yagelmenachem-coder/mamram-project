@@ -90,7 +90,7 @@ with tab1:
 
 with tab2:
     st.header("זיהוי זיוף קול (Audio Forensics)")
-    st.write("העלה הקלטה כדי לבדוק אם מדובר בקול אנושי או ב-Deepfake שנוצר ע\"י AI.")
+    st.write("העלה הקלטה כדי לבדוק אם מדובר בקול אנושי או בהונאה רובוטית-Deepfake שנוצר ע\"י AI.")
     audio_file = st.file_uploader("בחר קובץ")
 if audio_file is not None:
             st.audio(audio_file)
@@ -98,5 +98,6 @@ if audio_file is not None:
                 # כאן המערכת "חושבת" - בשלב זה נוסיף זיהוי פשוט להדגמה
                 import time
                 time.sleep(2) # מדמה ניתוח של AI
-                st.success("הניתוח הושלם!")
-                st.info("תוצאה: לא נמצאו סימנים מובהקים ל-Deepfake. הקול נראה אנושי.")
+                st.success("!הניתוח הושלם")
+                st.info("חתוצאה: לא נמצאו סימנים מובהקים לחשד-Deepfake. הקול נראה אנושי.")
+
